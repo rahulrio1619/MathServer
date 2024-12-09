@@ -136,10 +136,10 @@ def powerlamp(request):
         context['I'] = I
         context['R'] = R
         print('Power=',Power)
-    return render(request,'side/calci.html',context)```
+    return render(request,'side/calci.html',context)
+```
 
 ##urls.py:
-
 ```
 from django.contrib import admin
 from django.urls import path
@@ -149,7 +149,7 @@ urlpatterns = [
     path('PowerOfLampFilamentInAnIncandescentBulb/',views.powerlamp,name="PowerOfLampFilamentInAnIncandescentBulb"),
     path('',views.powerlamp,name="PowerOfLampFilamentInAnIncandescentBulb"),
 ]
-
+```
 
 
 ## HOMEPAGE:
